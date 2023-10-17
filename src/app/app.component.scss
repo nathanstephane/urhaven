@@ -1,0 +1,40 @@
+.app-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #FFFFFC;
+}
+
+.top-section
+{
+    background-color: rgb(128, 122, 116);
+    text-align: center;
+    padding: 100px 0;
+    
+    h1{
+        font-size: 100px;
+        color: #FFFFFC;
+    }
+    h2{
+        font-size: 30px;
+        color: #FFFFFC;
+        text-shadow: 0px 1px 4px rgba(#BEB7A4, 0.1);
+    }
+    p{
+        width: 30%;
+        
+       margin-left:35%;
+    }
+}
+
+.content-section
+{
+    background-color: crimson;
+    flex-grow:1;
+}
+
+.bottom-section
+{
+    background-color: aquamarine ;
+}

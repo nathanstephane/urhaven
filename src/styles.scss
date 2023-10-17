@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import"./resetcss.scss";
+
+@font-face {
+    font-family: 'Karu';
+    src: url('../assets/fonts/Karu-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+html{font-family:'Karu',sans-serif;}
+html, body{
+    height: 100%;
+}
+h1{font-size: 40px;}
+h2{font-size: 20px;}
