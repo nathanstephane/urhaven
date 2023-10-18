@@ -1,0 +1,67 @@
+ .tabs{
+    display: flex;
+    background-color: rgba(#fffffc,0.3);
+    padding: 10px;
+    border-radius: 8px;
+    gap: 12px;
+    backdrop-filter: blur(5px);
+    margin: 12px;
+    margin-top: 50px;
+ }
+//  .tab {
+//     &:not(:last-child){
+//         margin-right: 12px;
+//     }
+//  }
+
+.tab{
+    position: relative;
+    z-index: 1 ;
+}
+
+ .tab-tile{
+    padding:12px;
+   
+    //border-radius: 10px;
+    //background: rgba($color: #000023, $alpha: 0.1);
+    //background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
+    cursor: pointer;
+    //display: flex;
+    
+}
+
+.tab-tile::before{
+     content: '';
+     position: absolute;
+     top:0;
+     left:0;
+     
+     height: 100%;
+     width: 100%;
+    //background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
+    border-radius: 10px;
+
+    transition: all 0.2s;
+
+    z-index: -1;
+}
+
+.bookmarks-tab .tab-tile::before{
+    background: linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
+}
+
+.view_kanban-tab .tab-tile::before{
+   background:  linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+}
+
+.music_note-tab .tab-tile::before{
+    background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+}
+
+.notes-tab .tab-tile::before{
+    background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
+}
+
+.tab-tile:hover::before {
+    transform: ;
+}

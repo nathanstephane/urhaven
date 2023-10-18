@@ -3,15 +3,23 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #FFFFFC;
+  // background-color: #FFFFFC;
+    //background-image: url("https://64.media.tumblr.com/b61514ab8808e411d16e78e56e370948/tumblr_nljbs6oe4T1shdhdjo1_540.gifv");
+    background-image: url("./../../assets/imgs/thwinrises.gif") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-attachment: fixed;
 }
 
 .top-section
 {
-    background-color: rgb(128, 122, 116);
+   // background-color: rgb(128, 122, 116);
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
     
+    display: flex;
+    flex-direction: column;
     h1{
         font-size: 100px;
         color: #FFFFFC;
@@ -23,18 +31,25 @@
     }
     p{
         width: 30%;
-        
-       margin-left:35%;
+        padding: 0;
+        // margin-left:35%;
+        margin:auto;
+        background-color: rgba(#FFFFFC,0.7);
     }
 }
 
 .content-section
 {
-    background-color: crimson;
+   // background-color: crimson;
     flex-grow:1;
 }
 
 .bottom-section
 {
-    background-color: aquamarine ;
+    //background-color: aquamarine ;
+    display: flex;
+    app-tabs{
+        margin: auto;
+    }
+    
 }
