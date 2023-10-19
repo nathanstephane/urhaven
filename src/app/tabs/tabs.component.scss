@@ -17,6 +17,13 @@
 .tab{
     position: relative;
     z-index: 1 ;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.selected{
+    color: red;
 }
 
  .tab-tile{
@@ -30,6 +37,7 @@
     
 }
 
+//styles for the tab tile background shape
 .tab-tile::before{
      content: '';
      position: absolute;
@@ -52,11 +60,11 @@
     background: linear-gradient(90deg, hsla(298, 68%, 90%, 1) 0%, hsla(30, 82%, 91%, 1) 100%);
 }
 
-.view_kanban-tab .tab-tile::before{
+.kanban-tab .tab-tile::before{
    background:  linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
 }
 
-.music_note-tab .tab-tile::before{
+.soundscape-tab .tab-tile::before{
     background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
 }
 
@@ -68,9 +76,8 @@
     background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
 }
 
-
-
 .tab-tile:hover::before {
     transform: scale(1.2);
     opacity: 1;   
 }
+//End of background shape styles
