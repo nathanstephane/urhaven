@@ -43,6 +43,8 @@
 
     transition: all 0.2s;
 
+    opacity: 0.85;
+    
     z-index: -1;
 }
 
@@ -62,6 +64,13 @@
     background: linear-gradient(90deg, hsla(233, 100%, 90%, 1) 0%, hsla(0, 0%, 89%, 1) 100%);
 }
 
+.sabbath-school-tab .tab-tile::before{
+    background: linear-gradient(90deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+}
+
+
+
 .tab-tile:hover::before {
-    transform: ;
+    transform: scale(1.2);
+    opacity: 1;   
 }
