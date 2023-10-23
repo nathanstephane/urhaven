@@ -1,0 +1,57 @@
+.root
+{
+    background-color: darkseagreen;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+
+.board
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    min-height: 0;
+    min-width: 0;
+
+    .board-bar{
+    background: rgba($color: #727272, $alpha: 0.5);
+    padding: 0 15px;
+
+        .board-name{
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        }
+    }
+
+    .board-wrapper{
+        display: flex;
+        flex-grow: 1;
+        overflow-x: auto;
+
+        .board-columns{
+            display: flex;
+            flex-grow: 1;
+
+            .board-column{
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                flex-basis: 0;
+
+                min-width: 300px;
+
+                background: rgba($color: #ffffff, $alpha: 0.5);
+            }
+        }
+    }
+
+    
+}
+
+
+
