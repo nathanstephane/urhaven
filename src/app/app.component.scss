@@ -6,6 +6,7 @@
     //background-color: #FFFFFC;
     background-image: url("https://64.media.tumblr.com/b61514ab8808e411d16e78e56e370948/tumblr_nljbs6oe4T1shdhdjo1_540.gifv");
     //background-image: url("./../../assets/imgs/thwinrises.gif") ;
+    //background-image: url("./../../assets/imgs/ghibli.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,6 +43,7 @@
 {
    // background-color: crimson;
     flex-grow:1;
+    min-height: 0;
 }
 
 .bottom-section

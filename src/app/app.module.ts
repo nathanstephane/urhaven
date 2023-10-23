@@ -9,6 +9,7 @@ import { KanbanComponent } from './kanban/kanban.component';
 import { SoundscapeComponent } from './soundscape/soundscape.component';
 import { NotesComponent } from './notes/notes.component';
 import { SabbathschoolComponent } from './sabbathschool/sabbathschool.component';
+import { BookmarkTileComponent } from './bookmark-tile/bookmark-tile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SabbathschoolComponent } from './sabbathschool/sabbathschool.component'
     KanbanComponent,
     SoundscapeComponent,
     NotesComponent,
-    SabbathschoolComponent
+    SabbathschoolComponent,
+    BookmarkTileComponent
   ],
   imports: [
     BrowserModule,
