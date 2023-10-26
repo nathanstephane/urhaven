@@ -10,6 +10,8 @@ import { SoundscapeComponent } from './soundscape/soundscape.component';
 import { NotesComponent } from './notes/notes.component';
 import { SabbathschoolComponent } from './sabbathschool/sabbathschool.component';
 import { BookmarkTileComponent } from './bookmark-tile/bookmark-tile.component';
+import { TasksComponent } from './tasks/tasks.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { BookmarkTileComponent } from './bookmark-tile/bookmark-tile.component';
     SoundscapeComponent,
     NotesComponent,
     SabbathschoolComponent,
-    BookmarkTileComponent
+    BookmarkTileComponent,
+    TasksComponent
+    
   ],
   imports: [
     BrowserModule,

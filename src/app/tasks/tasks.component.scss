@@ -1,0 +1,77 @@
+.tasks-wrapper{
+     overflow-y: auto;
+     height: 100%;
+ 
+}
+
+//tip-- move the container to the global style file maybe
+.container
+{
+    max-width: 850px;
+    margin: auto;
+}
+
+
+.task-item{
+    background-color: rgba($color: #000000, $alpha: 0.35);
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.task-text{
+    color: rgba($color: #ffffff, $alpha: 0.9);
+}
+
+.check-box{
+    display: flex;
+    padding: 4px;
+    border: 2px solid rgba($color: #dfdfdf, $alpha: 0.35);
+    border-radius: 50%;
+    margin-right: 15px;
+    i{
+        font-size: 15px;
+        opacity: 0;
+    }   
+}
+
+.task-item:hover:not(.completed){
+    .task-text{
+        color:rgba($color: #ffffff, $alpha: 0.9);
+       
+    }
+
+    .check-box{
+        border-color: transparent;
+        background-color: rgba($color: #000000, $alpha: 0.35);
+
+        i{
+            opacity: 0.5;
+            color: rgba($color: #bebebe, $alpha: 1);
+        }
+    }
+    
+}
+
+.task-item.completed {
+       .task-text{
+        color: rgba($color: #ffffff, $alpha: 0.8);
+        text-decoration: line-through;
+       }
+
+       .check-box{
+        background: rgba(43, 255, 124, 0.9);
+        border-color: transparent;
+        i{
+            opacity: 1;
+        }
+       }
+}
+
+.task-test,
+.check-box{
+    transition: 0.15s;
+}
